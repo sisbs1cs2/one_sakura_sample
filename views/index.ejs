@@ -26,12 +26,12 @@
     <p>WEBサイトにおける主要コンテンツを紹介するのに適したスタイル。</p>
     <p><a class="btn btn-primary btn-lg" href="javascript:void(0);" role="button">もっと詳しく</a></p>
     <p>
-      <button type="button" class="btn btn-default" onclick="ga('send','event','button','click','Default');">Default</button>
-      <button type="button" class="btn btn-primary" onclick="ga('send','event','button','click','Primary');">Primary</button>
-      <button type="button" class="btn btn-success" onclick="ga('send','event','button','click','Success');">Success</button>
-      <button type="button" class="btn btn-info"    onclick="ga('send','event','button','click','Info');"   >Info</button>
-      <button type="button" class="btn btn-warning" onclick="ga('send','event','button','click','Warning');">Warning</button>
-      <button type="button" class="btn btn-danger"  onclick="ga('send','event','button','click','Danger');" >Danger</button>
+      <button type="button" class="btn btn-default" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Default'});">Default</button>
+      <button type="button" class="btn btn-primary" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Primary'});">Primary</button>
+      <button type="button" class="btn btn-success" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Success'});">Success</button>
+      <button type="button" class="btn btn-info"    onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Info'});">Info</button>
+      <button type="button" class="btn btn-warning" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Warning'});">Warning</button>
+      <button type="button" class="btn btn-danger"  onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Danger'});">Danger</button>
     </p>
   </div>
 </div>
