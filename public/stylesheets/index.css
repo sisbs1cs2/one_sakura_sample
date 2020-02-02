@@ -1,8 +1,8 @@
 .campaignButton {
   padding: 0;
   border: none;
-  *width: 1148px; /* for IE6-7 */
-  *height: 156px; /* for IE6-7 */
+  width: 900px; /* for IE6-7 */
+  height: 156px; /* for IE6-7 */
   background: transparent;
 }
 .claim {
@@ -15,15 +15,13 @@
     padding: 0;
     width: 850px;
     table-layout: fixed;
+    margin: 1;
   }
   
   table tr {
     background-color: #fff;
     padding: .35em;
     border: 2px solid #50535d;
-  }
-  table tr:last-child{
-    border: none;
   }
   table th{
     padding: 2em;
@@ -38,23 +36,4 @@
   .head{
     background-color: #c71585;
     color:#fff;
-  }
-  table tbody th {
-      border-right: 2px solid #eee;
-  }
-  th.non {
-      border-right: none;
-  }
-  .txt{
-     text-align: left;
-     font-size: .85em;
-  }
-  table .btnarea td {
-    padding: .2em .5em;
-    border-right:none
-  }
-  @media screen and (max-width: 600px) {
-    .wrap{
-       overflow-x: scroll;
-    }
   }

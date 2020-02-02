@@ -1,0 +1,47 @@
+.campaignButton {
+  padding: 0;
+  border: none;
+  *width: 1148px; /* for IE6-7 */
+  *height: 156px; /* for IE6-7 */
+  background: transparent;
+}
+.usehistry {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+    table-layout: fixed;
+  }
+  table td {
+    padding: 2em .5em;
+    border-right: 2px solid #50535d;
+    text-align: center;
+    background-color: #fff;
+  }
+  .head{
+    color: rgb(6, 40, 117);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .price{
+    font-size: 16px;
+  }
+
+.box {
+    border-radius: 10px;/*角の丸み*/
+    width: 600px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background-color: #fff;
+    border: dashed 2px #e4a213;/*点線*/
+}
+.campaighn_price {
+  font-size: 40px;
+  color: #FF0000;
+  text-decoration:underline;/*下線を引く*/
+  text-decoration-color:#FF0000;/*下線を赤色*/
+}

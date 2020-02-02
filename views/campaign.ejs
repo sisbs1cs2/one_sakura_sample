@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <link rel="stylesheet" href="./stylesheets/campaign.css">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+
+<div class="container-fluid bg-3 text-left">    
+  <h2 style="color:#5e1c45;">D坂ガス</h2><br>
+  <div class="row">
+  </div>
+  <div class="jumbotron">
+    <img src="./img/gasokokuBanner.png" alt="キャンペーンバナー" width="910"/>
+    <div class="container-fluid bg-3 text-center">
+      <h2 style="color:#0c0c0c;">あなたのご利用履歴</h2>
+      <div class="usehistry">
+        <table border="2">
+          <tbody>
+            <tr>
+              <td class="head">2019年<br>11月</td>
+              <td class="head">2019年<br>12月</td>
+              <td class="head">2020年<br>1月</td class="head">
+            </tr>
+            <tr>
+              <td class="price">5,432円</td>
+              <td class="price">5,678円</td>
+              <td class="price">5,555円</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container-fluid bg-3 text-center">
+      <h2 style="color:#0c0c0c;">あなたにオススメの料金プラン</h2>
+      <div class="box container-fluid">
+       <p>夜電気を使う人にオトクな料金プラン</p>
+        先日と同じ条件でご利用の場合、<span class="campaighn_price">4,567</span>円/月<br>
+        ※従来のプランに比べ、<span style="color: #FF0000;font-size: 20px;">988</span>円オトク！！
+      </div>
+      <h3> ＼ webで簡単1分 ／ </h3>
+      <button type="button" class="campaignButton" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'campaignSubmit'});"><a href="/"><img src="./img/campaignButton.png" alt="申し込みボタン" /></a></button>
+    </div>
+  </div>
+</div>
+</body>
+<% include partials/script %>
+</html>
