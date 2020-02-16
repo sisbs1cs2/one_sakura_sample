@@ -1,7 +1,7 @@
 .campaignButton {
   padding: 0;
   border: none;
-  width: 900px; /* for IE6-7 */
+  width: 100%; /* for IE6-7 */
   height: 156px; /* for IE6-7 */
   background: transparent;
 }
