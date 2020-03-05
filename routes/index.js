@@ -14,4 +14,10 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', {page:'Contact Us', menuId:'contact'});
 });
 
+router.get('/v2/index', function(req, res, next) {
+  const index = require('../controllers/v2/IndexController');
+  let IndexController = new index(req, res);
+  IndexController.execute();
+});
+
 module.exports = router;
