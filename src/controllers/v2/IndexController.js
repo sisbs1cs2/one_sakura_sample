@@ -4,10 +4,6 @@
 const BaseController = require('../BaseController');
 
 module.exports = class Index extends BaseController {
-    constructor(req, res) {
-        super(req, res);
-    }
-
     execute() {
         this.setTemplete('index');
         this.setValue('page', 'HOME');
