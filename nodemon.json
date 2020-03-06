@@ -1,6 +1,6 @@
 {
     "watch": ["*"],
-    "ext": "js, ejs",
+    "ext": "js, ejs, css",
     "ignore": [],
     "exec": "node bin/www"
 }
