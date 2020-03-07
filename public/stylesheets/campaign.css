@@ -21,11 +21,9 @@ table th {
   padding: 7px 0;
   border-right: solid 1px #ddd;
   border-left: solid 1px #ddd;
-}
-
-table th {
   background-color: #f5b932;
   color: white;
+  font-size: 20px;
 }
 
 table tr td {

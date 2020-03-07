@@ -5,6 +5,7 @@
 <head>
   <% include partials/head %>
   <style type="text/css">
+
     h1 {
       position: relative;
       background: #ffd98a;
@@ -44,7 +45,7 @@
   <div class="container bg-3 text-left">
     <h2 style="color:#c71585;">D坂ガス</h2>
     <h1>今月の請求金額</h4>
-      <div class="claim">
+      <div class="container-fluid claim">
         <table border="1">
           <tbody>
             <tr>
@@ -59,21 +60,27 @@
           </tbody>
         </table>
       </div>
-      <div class="text-center">
-        <button class="campaignButton"><a href="/campaign"><img src="./img/gasokokuBanner.png"
-              class="img-responsive img-rounded" alt="キャンペーンバナー" width="100%" /></a></button>
+      <div class="container-fluid text-center">
+        <button class="campaignButton">
+          <a href="/campaign">
+            <img src="./img/gasokokuBanner.png" class="img-responsive img-rounded" alt="キャンペーンバナー" width="100%" />
+          </a>
+        </button>
       </div>
-      <table>
-        <tr style="border: none;">
-          <td class="detailMenuButton"><img src="./img/webkenshin.png" alt="web検針票" width="100%"/></td>
-          <td class="detailMenuButton"><img src="./img/usehistory.png" alt="ご利用履歴" width="100%" /></td>
-          <td class="detailMenuButton"><img src="./img/campaign.png" alt="キャンペーン" width="100%" /></td>
-          <td class="detailMenuButton"><img src="./img/infomation.png" alt="お問い合わせ" width="100%" /></td>
-        </tr>
-      </table>
+      <div class="container-fluid">
+        <table>
+          <tr style="border: none;">
+            <td class="detailMenuButton"><img src="./img/webkenshin.png" alt="web検針票" width="100%"/></td>
+            <td class="detailMenuButton"><img src="./img/usehistory.png" alt="ご利用履歴" width="100%" /></td>
+            <td class="detailMenuButton"><img src="./img/campaign.png" alt="キャンペーン" width="100%" /></td>
+            <td class="detailMenuButton"><img src="./img/infomation.png" alt="お問い合わせ" width="100%" /></td>
+          </tr>
+        </table>
+      </div>
   </div>
 
 </body>
 <% include partials/script %>
 
 </html>
+
