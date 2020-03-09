@@ -29,6 +29,7 @@ artifacts:
     - bin/**/* 
     - node_modules/**/* 
     - public/**/* 
+    - src/**/* 
     - routes/**/* 
     - views/**/* 
     - scripts/**/* 
