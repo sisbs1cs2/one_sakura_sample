@@ -96,3 +96,8 @@ h1:before {
   border: solid 3px white;
   border-radius: 50%;
 }
+
+.container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -18,11 +18,11 @@
             <tr>
               <th rowspan="2" class="head">2020年<br>2月</th class="head">
               <th>ご請求額</th>
-              <td>1,111円</td>
+              <td><%= price.toLocaleString() + '円' %></td>
             </tr>
             <tr>
               <th class="price">ご使用料</th>
-              <td class="price">111<span>kWh<span></td>
+              <td class="use"><%= use %><span>kWh<span></td>
             </tr>
           </tbody>
         </table>

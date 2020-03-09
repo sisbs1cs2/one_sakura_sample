@@ -20,9 +20,9 @@
             <th>２０２０年<br>０１月</th>
           </tr>
           <tr>
-            <td>5,432円</td>
-            <td>5,678円</td>
-            <td>5,555円</td>
+            <td><%= price1.toLocaleString() %>円</td>
+            <td><%= price2.toLocaleString() %>円</td>
+            <td><%= price3.toLocaleString() %>円</td>
           </tr>
         </table>
       </div>
@@ -30,9 +30,9 @@
       <div class="box container-fluid text-center">
         <h3>夜電気を使う人にオトクな料金プラン</h3>
         <p>先日と同じ条件でご利用の場合、
-          <span class="campaighn_price">4,567</span>円／月
+          <span class="campaighn_price"><%= price4.toLocaleString() %></span>円／月
           <br> ※従来のプランに比べ、
-          <span style="color: #FF0000;font-size: 20px;">988</span>円オトク！！
+          <span style="color: #FF0000;font-size: 20px;"><%= (price3 - price4).toLocaleString() %></span>円オトク！！
         </p>
       </div>
       <div class="container-fluid">
