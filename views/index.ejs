@@ -1,42 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-<link rel="stylesheet" href="./stylesheets/index.css">
+
 
 <head>
   <% include partials/head %>
-  <style type="text/css">
-    h1 {
-      position: relative;
-      background: #ffd98a;
-      padding: 2px 5px 2px 50px;
-      font-size: 20px;
-      color: #474747;
-      border-radius: 0 10px 10px 0;
-    }
-
-    h1:before {
-      margin-left: 20px;
-      font-family: "Font Awesome 5 Free";
-      content: "\f135";
-      display: inline-block;
-      line-height: 40px;
-      position: absolute;
-      padding: 0em;
-      color: white;
-      background: #ffa337;
-      font-weight: 900;
-      width: 40px;
-      text-align: center;
-      height: 40px;
-      line-height: 40px;
-      left: -1.35em;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      border: solid 3px white;
-      border-radius: 50%;
-    }
-  </style>
+  <link rel="stylesheet" href="stylesheets/index.css">
 </head>
 
 <body>
@@ -44,7 +12,7 @@
   <div class="container bg-3 text-left">
     <h2 style="color:#c71585;">D坂ガス</h2>
     <h1>今月の請求金額</h4>
-      <div class="claim">
+      <div class="container-fluid">
         <table border="1">
           <tbody>
             <tr>
@@ -59,18 +27,23 @@
           </tbody>
         </table>
       </div>
-      <div class="text-center">
-        <button class="campaignButton"><a href="/campaign"><img src="./img/gasokokuBanner.png"
-              class="img-responsive img-rounded" alt="キャンペーンバナー" width="100%" /></a></button>
+      <div class="container-fluid">
+        <button class="campaignButton">
+          <a href="/campaign">
+            <img src="img/gasokokuBanner.png" class="img-responsive img-rounded" alt="キャンペーンバナー" width="100%" />
+          </a>
+        </button>
       </div>
-      <table>
-        <tr style="border: none;">
-          <td class="detailMenuButton"><img src="./img/webkenshin.png" alt="web検針票" width="100%"/></td>
-          <td class="detailMenuButton"><img src="./img/usehistory.png" alt="ご利用履歴" width="100%" /></td>
-          <td class="detailMenuButton"><img src="./img/campaign.png" alt="キャンペーン" width="100%" /></td>
-          <td class="detailMenuButton"><img src="./img/infomation.png" alt="お問い合わせ" width="100%" /></td>
-        </tr>
-      </table>
+      <div class="container-fluid">
+        <table>
+          <tr style="border: none;">
+            <td class="detailMenuButton"><img src="img/webkenshin.png" alt="web検針票" width="100%" /></td>
+            <td class="detailMenuButton"><img src="img/usehistory.png" alt="ご利用履歴" width="100%" /></td>
+            <td class="detailMenuButton"><img src="img/campaign.png" alt="キャンペーン" width="100%" /></td>
+            <td class="detailMenuButton"><img src="img/infomation.png" alt="お問い合わせ" width="100%" /></td>
+          </tr>
+        </table>
+      </div>
   </div>
 
 </body>

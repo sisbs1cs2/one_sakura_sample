@@ -1,49 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-<link rel="stylesheet" href="./stylesheets/campaign.css">
 
 <head>
   <% include partials/head %>
-  <style type="text/css">
-    h1 {
-      position: relative;
-      background: #ffd98a;
-      padding: 2px 5px 2px 50px;
-      font-size: 20px;
-      color: #474747;
-      border-radius: 0 10px 10px 0;
-    }
-
-    h1:before {
-      margin-left: 20px;
-      font-family: "Font Awesome 5 Free";
-      content: "\f135";
-      display: inline-block;
-      line-height: 40px;
-      position: absolute;
-      padding: 0em;
-      color: white;
-      background: #ffa337;
-      font-weight: 900;
-      width: 40px;
-      text-align: center;
-      height: 40px;
-      line-height: 40px;
-      left: -1.35em;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      border: solid 3px white;
-      border-radius: 50%;
-    }
-  </style>
+  <link rel="stylesheet" href="stylesheets/campaign.css">
 </head>
 
 <body>
   <% include partials/menu %>
   <div class="container bg-3 text-left">
     <h2 style="color:#c71585;">D坂ガス</h2>
-    <img src="./img/campaignMain.png" class="img-responsive img-rounded" alt="キャンペーンメイン" width="100%" />
+    <img src="img/campaignMain.png" class="img-responsive img-rounded" alt="キャンペーンメイン" width="100%" />
     <h1>あなたのご利用履歴</h2>
       <div class="container-fluid">
         <table>
@@ -59,20 +26,24 @@
           </tr>
         </table>
       </div>
-      <h1>あなたにオススメの料金プラン</h2>
-        <div class="box container-fluid text-center">
-          <h3>夜電気を使う人にオトクな料金プラン</h4>
-          <p>先日と同じ条件でご利用の場合、
-            <span class="campaighn_price">4,567</span>円／月<br> ※従来のプランに比べ、
-            <span style="color: #FF0000;font-size: 20px;">988</span>円オトク！！
-        </div>
+      <h1>あなたにオススメの料金プラン</h1>
+      <div class="box container-fluid text-center">
+        <h3>夜電気を使う人にオトクな料金プラン</h3>
+        <p>先日と同じ条件でご利用の場合、
+          <span class="campaighn_price">4,567</span>円／月
+          <br> ※従来のプランに比べ、
+          <span style="color: #FF0000;font-size: 20px;">988</span>円オトク！！
+        </p>
+      </div>
+      <div class="container-fluid">
         <h3 style="text-align: center;"> ＼ webで簡単1分 ／ </h3>
         <button type="button" class="campaignButton"
-          onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'campaignSubmit'});" width="100%>
+          onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'campaignSubmit'});" width="100%">
           <a href=" javascript:void(0);">
-          <img src="./img/campaignButton.png" class="img-responsive img-rounded" alt="申し込みボタン" / width="100%">
+            <img src="img/campaignButton.png" class="img-responsive img-rounded" alt="申し込みボタン" width="100%">
           </a>
         </button>
+      </div>
   </div>
 </body>
 <% include partials/script %>

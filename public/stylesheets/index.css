@@ -30,6 +30,7 @@ table th {
 table th {
   background-color: #f5b932;
   color: white;
+  font-size: 20px;
 }
 
 table tr td {
@@ -50,4 +51,36 @@ table td {
   background-color: #fff;
   border: dashed 2px #e4a213;
   /*点線*/
+}
+
+h1 {
+  position: relative;
+  background: #ffd98a;
+  padding: 2px 5px 2px 50px;
+  font-size: 20px;
+  color: #474747;
+  border-radius: 0 10px 10px 0;
+}
+
+h1:before {
+  margin-left: 20px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f135";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ffa337;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: -1.35em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: solid 3px white;
+  border-radius: 50%;
 }
