@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <link rel="stylesheet" href="./stylesheets/index.css">
 <head>
  <% include partials/head %> 
 </head>
 <body>
 <% include partials/menu %>
-
-<div class="container-fluid bg-3 text-center">    
-  <h3><%= page %></h3><br>
+<div class="container bg-3 text-left">    
+  <h2 style="color:#c71585;">D坂ガス</h2><br>
   <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-    </div>
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
   </div>
   </br>
   <div class="jumbotron">
-    <h2>アジャイル開発workshop</h1>
-    テスト
-    <p>WEBサイトにおける主要コンテンツを紹介するのに適したスタイル。</p>
-    <p><a class="btn btn-primary btn-lg" href="javascript:void(0);" role="button">もっと詳しく</a></p>
-    <p>
-      <button type="button" class="btn btn-default" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Default'});">Default</button>
-      <button type="button" class="btn btn-primary" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Primary'});">Primary</button>
-      <button type="button" class="btn btn-success" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Success'});">Success</button>
-      <button type="button" class="btn btn-info"    onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Info'});">Info</button>
-      <button type="button" class="btn btn-warning" onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Warning'});">Warning</button>
-      <button type="button" class="btn btn-danger"  onclick="gtag('event', 'click', {'event_category': 'button','event_label': 'Danger'});">Danger</button>
-    </p>
+    <h4> - 今月の請求金額</h4>
+    <div class="claim">
+      <table border="2">
+        <tbody>
+          <tr>
+            <td rowspan="2" class="head">2020年<br>2月</td class="head">
+            <td>ご請求額</td>
+            <td>1,111円</td>
+          </tr>
+          <tr>
+            <td class="price">ご使用料</td>
+            <td class="price">111<span>kWh<span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center">
+      <button class="campaignButton"><a href="/campaign"><img src="./img/gasokokuBanner.png" alt="キャンペーンバナー" width="100%"/></a></button>
+    </div>
+    <table>
+      <tr style="border: none;">
+        <td class="detailMenuButton"><img src="./img/webkenshin.png" alt="web検針票" width="200" height="200"/></td>
+        <td class="detailMenuButton"><img src="./img/usehistory.png" alt="ご利用履歴" width="200" height="200"/></td>
+        <td class="detailMenuButton"><img src="./img/campaign.png" alt="キャンペーン" width="200" height="200"/></td>
+        <td class="detailMenuButton"><img src="./img/infomation.png" alt="お問い合わせ" width="200" height="200"/></td>
+      </tr>
+    </table>
   </div>
 </div>
 

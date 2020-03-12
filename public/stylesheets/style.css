@@ -1,4 +1,4 @@
-.bg-3 { 
+  .bg-3 { 
       background-color: #ffffff;
       color: #555555;
   }
@@ -21,4 +21,11 @@
 
   .active>a {
     color: #1abc9c !important;;
+  }
+  .detailMenuButton {
+    padding: 0;
+    border: none;
+    *width: 200px; /* for IE6-7 */
+    *height: 200px; /* for IE6-7 */
+    background: transparent;
   }

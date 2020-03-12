@@ -1,0 +1,39 @@
+.campaignButton {
+  padding: 0;
+  border: none;
+  width: 100%; /* for IE6-7 */
+  height: 156px; /* for IE6-7 */
+  background: transparent;
+}
+.claim {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 850px;
+    table-layout: fixed;
+    margin: 1;
+  }
+  
+  table tr {
+    background-color: #fff;
+    padding: .35em;
+    border: 2px solid #50535d;
+  }
+  table th{
+    padding: 2em;
+    border-right: 2px solid #50535d;
+    font-size: .85em;
+  }
+  table td {
+    padding: 2em .5em;
+    border-right: 2px solid #50535d;
+    text-align: center;
+  }
+  .head{
+    background-color: #c71585;
+    color:#fff;
+  }
