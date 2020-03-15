@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <link rel="stylesheet" href="./stylesheets/index.css">
+
+
 <head>
- <% include partials/head %> 
+  <% include partials/head %>
+  <link rel="stylesheet" href="stylesheets/index.css">
 </head>
+
 <body>
-<% include partials/menu %>
-<div class="container bg-3 text-left">    
-  <h2 style="color:#c71585;">D坂ガス</h2><br>
-  <div class="row">
-  </div>
-  </br>
-  <div class="jumbotron">
-    <h4> - 今月の請求金額</h4>
-    <div class="claim">
-      <table border="2">
-        <tbody>
-          <tr>
-            <td rowspan="2" class="head">2020年<br>2月</td class="head">
-            <td>ご請求額</td>
-            <td>1,111円</td>
+  <% include partials/menu %>
+  <div class="container bg-3 text-left">
+    <h2 style="color:#c71585;">D坂ガス</h2>
+    <h1>今月の請求金額</h4>
+      <div class="container-fluid">
+        <table border="1">
+          <tbody>
+            <tr>
+              <th rowspan="2" class="head">2020年<br>2月</th class="head">
+              <th>ご請求額</th>
+              <td><%= price.toLocaleString() + '円' %></td>
+            </tr>
+            <tr>
+              <th class="price">ご使用料</th>
+              <td class="use"><%= use %><span>kWh<span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container-fluid">
+        <button class="campaignButton">
+          <a href="/campaign">
+            <img src="img/gasokokuBanner.png" class="img-responsive img-rounded" alt="キャンペーンバナー" width="100%" />
+          </a>
+        </button>
+      </div>
+      <div class="container-fluid">
+        <table>
+          <tr style="border: none;">
+            <td class="detailMenuButton"><img src="img/webkenshin.png" alt="web検針票" width="100%" /></td>
+            <td class="detailMenuButton"><img src="img/usehistory.png" alt="ご利用履歴" width="100%" /></td>
+            <td class="detailMenuButton"><img src="img/campaign.png" alt="キャンペーン" width="100%" /></td>
+            <td class="detailMenuButton"><img src="img/infomation.png" alt="お問い合わせ" width="100%" /></td>
           </tr>
-          <tr>
-            <td class="price">ご使用料</td>
-            <td class="price">111<span>kWh<span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="text-center">
-      <button class="campaignButton"><a href="/campaign"><img src="./img/gasokokuBanner.png" alt="キャンペーンバナー" width="100%"/></a></button>
-    </div>
-    <table>
-      <tr style="border: none;">
-        <td class="detailMenuButton"><img src="./img/webkenshin.png" alt="web検針票" width="200" height="200"/></td>
-        <td class="detailMenuButton"><img src="./img/usehistory.png" alt="ご利用履歴" width="200" height="200"/></td>
-        <td class="detailMenuButton"><img src="./img/campaign.png" alt="キャンペーン" width="200" height="200"/></td>
-        <td class="detailMenuButton"><img src="./img/infomation.png" alt="お問い合わせ" width="200" height="200"/></td>
-      </tr>
-    </table>
+        </table>
+      </div>
   </div>
-</div>
 
 </body>
 <% include partials/script %>
+
 </html>

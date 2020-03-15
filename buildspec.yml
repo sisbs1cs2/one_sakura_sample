@@ -31,6 +31,7 @@ artifacts:
     - public/**/* 
     - src/**/* 
     - routes/**/* 
+    - src/**/* 
     - views/**/* 
     - scripts/**/* 
     - package.json 

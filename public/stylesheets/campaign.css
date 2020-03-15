@@ -1,47 +1,103 @@
-.campaignButton {
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
   padding: 0;
-  border: none;
-  *width: 1148px; /* for IE6-7 */
-  *height: 156px; /* for IE6-7 */
-  background: transparent;
+  table-layout: fixed;
+  width: 100%;
 }
-.usehistry {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.25;
-  }
-  table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    padding: 0;
-    width: 600px;
-    table-layout: fixed;
-  }
-  table td {
-    padding: 2em .5em;
-    border-right: 2px solid #50535d;
-    text-align: center;
-    background-color: #fff;
-  }
-  .head{
-    color: rgb(6, 40, 117);
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .price{
-    font-size: 16px;
-  }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+table tr:last-child {
+  border-bottom: solid 1px #ddd;
+}
+
+table th {
+  text-align: center;
+  padding: 7px 0;
+  border-right: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+}
+
+table th {
+  background-color: #f5b932;
+  color: white;
+}
+
+table tr td {
+  font-size: 30px;
+}
+
+table td {
+  text-align: center;
+  padding: 7px 0;
+  border-right: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+}
 
 .box {
-    border-radius: 10px;/*角の丸み*/
-    width: 600px;
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    background-color: #fff;
-    border: dashed 2px #e4a213;/*点線*/
+  border-radius: 10px;
+  /*角の丸み*/
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  background-color: #fff;
+  border: dashed 2px #e4a213;
+  /*点線*/
 }
+
 .campaighn_price {
   font-size: 40px;
   color: #FF0000;
-  text-decoration:underline;/*下線を引く*/
-  text-decoration-color:#FF0000;/*下線を赤色*/
+  text-decoration-color: #FF0000;
+  /*下線を赤色*/
+}
+
+.campaignButton {
+  padding: 0;
+  border: none;
+  width: 100%; /* for IE6-7 */
+  height: 150px; /* for IE6-7 */
+  background: transparent;
+}
+
+h1 {
+  position: relative;
+  background: #ffd98a;
+  padding: 2px 5px 2px 50px;
+  font-size: 20px;
+  color: #474747;
+  border-radius: 0 10px 10px 0;
+}
+
+h1:before {
+  margin-left: 20px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f135";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ffa337;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: -1.35em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: solid 3px white;
+  border-radius: 50%;
+}
+
+.container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
