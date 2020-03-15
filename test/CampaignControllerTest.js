@@ -1,8 +1,8 @@
 'use strict'
 const assert = require('chai').assert;
-const target = require('../src/controllers/v2/IndexController');
+const target = require('../src/controllers/v2/CampaignController');
 
-describe('IndexControllerのテスト', () => {
+describe('CampaignControllerのテスト', () => {
     it('ダミーテスト１', () => {
         let objTarget = new target('aaa', 'bbb');
         //objTarget.execute();
