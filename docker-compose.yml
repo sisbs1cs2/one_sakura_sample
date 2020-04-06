@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    container_name: one_sakura_sample
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+        - 80:80
+    volumes:
+        - .:/app
+        - node_modules:/app/node_modules
+volumes:
+  node_modules: {}
