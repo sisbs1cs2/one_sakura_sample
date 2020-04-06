@@ -1,0 +1,17 @@
+FROM node:12.16.1-alpine3.9
+
+ENV PROJECT_ROOTDIR /app/
+
+WORKDIR $PROJECT_ROOTDIR
+
+COPY package.json $PROJECT_ROOTDIR
+
+RUN npm install
+
+COPY . $PROJECT_ROOTDIR
+
+EXPOSE 80
+
+ENV HOST 0.0.0.0
+
+CMD ["npm", "start"]
