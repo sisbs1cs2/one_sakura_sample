@@ -71,12 +71,6 @@ sudo docker build -t one_sakura_sample/one_sakura_sample .
 sudo docker run -it one_sakura_sample/one_sakura_sample
 ```
 
-### サービスの起動
-```
-$npm install
-$npm start
-```
-
 #### ③ブラウザから起動したアプリの動作確認
 
 
