@@ -4,8 +4,7 @@ workshop
 ## アプリをDocker環境で構築
 #### ①以下のDockerfileをローカル上に作成
 
-Dockerfile
-```
+```Dockerfile:Dockerfile
 # 検証環境
 FROM centos:centos7
 
@@ -25,7 +24,7 @@ CMD npm start
 ```
 
 #### ②作成したDockerfileを元に環境を構築
-```
+```bash:ローカル環境
 ## Dockerfileを元にイメージを作成
 sudo docker build -t one_sakura_sample/one_sakura_sample .
 
