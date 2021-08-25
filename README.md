@@ -2,9 +2,11 @@
 workshop
 
 ## Docker環境の構築
+#### 前提
+以下の手順に従ってDockerをインストールしてください。
 Dockerインストール手順：[Windows用](https://sukkiri.jp/technologies/virtualizers/docker/docker-win_install.html)、[Mac用](https://sukkiri.jp/technologies/virtualizers/docker/docker-mac_install.html)
 
-Dockerfile
+#### Dockerfile
 ```
 # 検証環境
 FROM centos:centos7
@@ -13,15 +15,15 @@ FROM centos:centos7
 RUN yum install -y git
 ```
 
-上記のDockerfileを作成
+#### 上記のDockerfileを作成
 Macの場合
 ```
 vi Dockerfile
 ```
 
-Windowsの場合
+#### Windowsの場合
 
-作成したDockerfileを元に環境を構築
+#### 作成したDockerfileを元に環境を構築
 ```
 # Dockerfileが置かれているディレクトリ上で以下のコマンドを実施
 ## Dockerfileを元にイメージを作成
